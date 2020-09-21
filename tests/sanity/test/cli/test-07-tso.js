@@ -18,7 +18,7 @@ const { execZoweCli, defaultZOSMFProfileName, defaultUSSProfileName, defaultTSOP
 
 let acctNum;
 
-describe('cli runs tso commands', function() {
+describe.skip('cli runs tso commands', function() {
   before('verify environment variables', async function() {
     expect(process.env.SSH_HOST, 'SSH_HOST is not defined').to.not.be.empty;
     expect(process.env.SSH_USER, 'SSH_USER is not defined').to.not.be.empty;
